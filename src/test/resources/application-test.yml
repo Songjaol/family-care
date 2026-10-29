@@ -1,0 +1,4 @@
+# 테스트용: datasource 는 Testcontainers(@ServiceConnection)가 채운다
+spring:
+  jpa:
+    show-sql: false
