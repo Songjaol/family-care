@@ -23,6 +23,9 @@ repositories {
     mavenCentral()
 }
 
+// Docker 29 호환을 위해 Testcontainers를 1.21.4 이상으로 올린다 (Spring Boot 3.5.6 기본값은 그보다 낮음)
+ext['testcontainers.version'] = '1.21.4'
+
 dependencies {
     // Web, 데이터, 검증, 보안, 운영
     implementation 'org.springframework.boot:spring-boot-starter-web'
